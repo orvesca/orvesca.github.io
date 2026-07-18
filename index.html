@@ -140,6 +140,8 @@
   .shot{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
   .shot + .shot{margin-top:74px}
   .shot.rev .shot-txt{order:2}
+  .shot.wide{grid-template-columns:1fr;gap:30px}
+  .shot.wide .shot-txt{max-width:760px}
   .shot h3{font-size:clamp(24px,2.8vw,32px);margin:14px 0 0}
   .shot p{color:var(--muted);margin-top:16px;font-size:17px}
   .shot .frame{border-radius:14px;overflow:hidden;border:1px solid var(--line-2);
@@ -377,7 +379,7 @@
         </div>
         <div class="frame"><img src="/history.png" alt="Saved history with five path slots" /></div>
       </div>
-      <div class="shot rev rv">
+      <div class="shot wide rv">
         <div class="shot-txt">
           <span class="eyebrow">Notes that stay put</span>
           <h3>A note that lives on the window it belongs to.</h3>
