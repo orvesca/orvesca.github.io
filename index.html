@@ -16,6 +16,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8LPX05WQ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J8LPX05WQ5');
+
+  // دالة تتبع التحميل
+  function trackDownload(event, url) {
+    if (typeof gtag === 'function') {
+      event.preventDefault(); // إيقاف الانتقال الفوري للرابط
+      gtag('event', 'app_download', {
+        'event_category': 'Downloads',
+        'event_label': 'Orvesca Desktop App',
+        'value': 1,
+        'event_callback': function() {
+           window.open(url, '_blank'); // فتح الرابط في تبويب جديد بعد إرسال الحدث
+        }
+      });
+      
+      // كإجراء احتياطي في حال تأخر جوجل، يتم التوجيه بعد نصف ثانية
+      setTimeout(function() {
+         window.open(url, '_blank');
+      }, 500);
+    } else {
+       // إذا لم يعمل السكربت لسبب ما (مثل أدوات حظر الإعلانات)، يتم فتح الرابط مباشرة
+       window.open(url, '_blank');
+    }
+  }
+</script>
 <style>
   :root{
     --bg:#0A1424; --bg-2:#0B1930; --surface:#10203A; --surface-2:#16294a;
@@ -263,7 +295,7 @@
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip">Download</a>
+      <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
     </nav>
   </div>
 </header>
@@ -278,7 +310,7 @@
         <h1>Your windows,<br>on a <span class="em">loop.</span></h1>
         <p class="sub">Orvesca lines up the windows you pass all day into one ordered path. Step forward, step back, or jump straight to any window with a key you choose — hands on the keyboard, eyes on the work.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip">Download</a>
+          <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
           <a class="btn btn-ghost" href="#idea">See how it works</a>
         </div>
         <div class="trust">
@@ -433,7 +465,7 @@
             <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Jump with custom keys</li>
             <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>One saved path (save &amp; restore)</li>
           </ul>
-          <a class="btn btn-ghost" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip">Download</a>
+          <a class="btn btn-ghost" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
         </div>
         <div class="plan rv">
           <h3>Annual Pass</h3>
@@ -500,7 +532,7 @@
         <h2 style="margin-top:16px">Ready when your workflow is.</h2>
         <p>Orvesca is available now. The free plan is there from day one — no trial timer, no card required. Download the ZIP, extract it, then run the installer inside. Windows may show a SmartScreen notice because the app is new — click "More info" then "Run anyway" to continue.</p>
         <div class="row">
-          <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip">Download for Windows</a>
+          <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download for Windows</a>
           <a class="btn btn-ghost" href="mailto:orvescaapp@gmail.com">Get in touch</a>
         </div>
         <p class="contact">Questions or feedback? <a href="mailto:orvescaapp@gmail.com">orvescaapp@gmail.com</a></p>
