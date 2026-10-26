@@ -5,11 +5,11 @@
 <meta name="google-site-verification" content="7-KhEQ52eHiu0BVKehZqLRLAydAro8Rms52TGj2l_SM" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Orvesca — Smart Workflow Assistant for Windows</title>
-<meta name="description" content="Orvesca lines up the windows you juggle all day into one ordered loop. Step forward, step back, or jump straight to any window with a key you choose. Built for data entry and repetitive office work." />
+<meta name="description" content="Jump to any window with one key — N for notes, E for Excel. Orvesca gives each window its own key, or lets you walk through your windows in order. Free plan for Windows 10 and 11." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://orvesca.github.io/" />
 <meta property="og:title" content="Orvesca — Smart Workflow Assistant for Windows" />
-<meta property="og:description" content="Line up the windows you pass all day into one ordered path. Step forward, step back, or jump straight to any window with a key you choose." />
+<meta property="og:description" content="One key. Any window. Give each window its own key and jump straight to it — or walk through your windows in order." />
 <meta property="og:image" content="https://orvesca.github.io/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="/orvesca.png" />
@@ -307,8 +307,8 @@
     <div class="wrap hero-grid">
       <div class="hero-txt rv">
         <span class="eyebrow">Windows desktop · workflow tool</span>
-        <h1>Your windows,<br>on a <span class="em">loop.</span></h1>
-        <p class="sub">Orvesca lines up the windows you pass all day into one ordered path. Step forward, step back, or jump straight to any window with a key you choose — hands on the keyboard, eyes on the work.</p>
+        <h1>One key.<br>Any <span class="em">window.</span></h1>
+        <p class="sub">Give each window a single key — N for your notes, E for Excel — and press it to jump straight there. Or walk through your windows in order, one key at a time. Hands on the keyboard, eyes on the work.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
           <a class="btn btn-ghost" href="#idea">See how it works</a>
@@ -322,7 +322,7 @@
       <div class="hero-vis rv">
         <div class="window">
           <img src="/workflow.png" alt="Orvesca main window showing available windows and the current workflow" />
-          <div class="float-kc fk-left"><span class="kc sm">F8</span><span class="lbl">◀ previous</span></div>
+          <div class="float-kc fk-left"><span class="kc sm accent">E</span><span class="lbl">jump to any window</span></div>
           <div class="float-kc fk-right"><span class="lbl">next ▶</span><span class="kc sm">F9</span></div>
         </div>
       </div>
@@ -333,8 +333,8 @@
   <section class="idea" id="idea">
     <div class="wrap sec-head rv">
       <span class="eyebrow">The idea</span>
-      <p class="lead">Alt-Tab wasn't built for <em>a hundred passes a day.</em></p>
-      <p class="body">If your job means moving through the same set of windows over and over — entering data, comparing records, copying between apps — the mental cost isn't the typing. It's finding the next window, again and again. Orvesca removes that. You arrange your windows once into a workflow, then move through them in a fixed, circular order: forward with one key, back with another, or jump straight to any window with a key of your own.</p>
+      <p class="lead">Stop <em>hunting through the taskbar.</em></p>
+      <p class="body">The cost of working across many windows isn't the work — it's finding the right window, again and again. Orvesca removes that. Give each window a single key, usually its first letter, and press it to land there instantly: nothing to memorize, no modifiers. Unlike Windows' own Win+number shortcuts, a key belongs to one specific window, so two Excel files or two browser windows each get their own. And if you pass through the same windows in the same order all day — entering data, comparing records, copying between apps — line them up once and walk the whole route with a single key.</p>
       <div class="video-frame rv">
         <iframe src="https://www.youtube-nocookie.com/embed/R0xQI51JWrA" title="Orvesca demo" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       </div>
@@ -350,25 +350,24 @@
       </div>
       <div class="keys-grid rv">
         <div class="keycard">
-          <div class="row"><span class="kc">F9</span></div>
-          <div><h4>Next window</h4><p>Step forward through your path. Reach the end and it loops back to the start. Remap it to any key you like.</p></div>
+          <div class="row"><span class="kc accent">N</span><span class="kc accent">E</span><span class="kc accent">M</span></div>
+          <div><h4>Jump to any window</h4><p>Give any window a single key — its first letter works best — and press it to jump straight there. On or off per window.</p></div>
         </div>
         <div class="keycard">
-          <div class="row"><span class="kc">F8</span></div>
-          <div><h4>Previous window</h4><p>Step back the same way — a circle, not a dead end. Remap it to any key you like.</p></div>
+          <div class="row"><span class="kc accent">F10</span></div>
+          <div><h4>Type freely</h4><p>Need those letters to type? Press F10 to release every shortcut, then again to take them back. A fixed key, always ready.</p></div>
+        </div>
+        <div class="keycard">
+          <div class="row"><span class="kc">F8</span><span class="kc">F9</span></div>
+          <div><h4>Previous / next window</h4><p>Walk through your path in order. Reach the end and it loops back to the start. Remap both to any key you like.</p></div>
         </div>
         <div class="keycard">
           <div class="row"><span class="kc">F7</span></div>
           <div><h4>Suspend navigation</h4><p>Pause the loop for a moment without losing your place. A fixed key, always ready.</p></div>
         </div>
-        <div class="keycard">
-          <div class="row"><span class="kc accent">F10</span></div>
-          <div><h4>Release &amp; reclaim keys</h4><p>Free every shortcut when you need those keys for something else. Press again to take them back. A fixed key, always ready.</p></div>
-        </div>
       </div>
       <div class="keys-note rv">
-        <span class="kc sm accent">A</span><span class="kc sm accent">Q</span><span class="kc sm accent">Z</span>
-        <span>Assign any single key to any window and jump straight to it — jumping is optional, and on or off per window.</span>
+        <span>Two Excel files? Each gets its own key. Unlike Win+number, an Orvesca key belongs to one window — not to an app's spot on the taskbar.</span>
       </div>
     </div>
   </section>
@@ -382,19 +381,19 @@
       </div>
       <div class="fgrid">
         <div class="fcard rv">
-          <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="6"/><circle cx="8" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="12" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="16" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/></svg></div>
-          <h3>An ordered loop</h3>
-          <p>Arrange your windows into a path and move through them forward or back in a circle. Reorder any time, and duplicate a window when a step repeats.</p>
-        </div>
-        <div class="fcard rv">
           <div class="ficon"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-8 8"/><path d="M9 5H5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-4"/></svg></div>
           <h3>Jump keys you choose</h3>
-          <p>Give any window a single custom key and jump straight to it. Turn jumping on per window, or off entirely when you need those keys back.</p>
+          <p>Give any window a single key — N for notes, E for Excel — and jump straight to it. Even two windows of the same app get their own keys.</p>
         </div>
         <div class="fcard rv">
           <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="9" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0"/><path d="M12 14v2"/></svg></div>
-          <h3>Release &amp; reclaim</h3>
+          <h3>Type freely with F10</h3>
           <p>One press frees every shortcut so your keys are yours again; press once more to reclaim them — no fighting over hotkeys mid-task.</p>
+        </div>
+        <div class="fcard rv">
+          <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="6"/><circle cx="8" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="12" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="16" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/></svg></div>
+          <h3>Walk your route in order</h3>
+          <p>Arrange your windows into a path and move through them forward or back in a circle. Reorder any time, and duplicate a window when a step repeats.</p>
         </div>
         <div class="fcard rv">
           <div class="ficon"><svg viewBox="0 0 24 24"><path d="M15 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9l5-5V5a2 2 0 0 0-2-2z"/><path d="M15 21v-5h5"/><path d="M8 8h8M8 12h5"/></svg></div>
