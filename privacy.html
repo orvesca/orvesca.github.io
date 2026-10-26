@@ -193,7 +193,7 @@
 
     <p class="eyebrow">Privacy Policy</p>
     <h1>Your workflow stays yours.</h1>
-    <p class="updated">Last updated: August 7, 2026</p>
+    <p class="updated">Last updated: October 26, 2026</p>
 
     <p>Orvesca is a Windows desktop workflow tool. This policy explains what information Orvesca handles, where it is
       kept, and who it is shared with. Orvesca does not require a user account, and your workflow data stays on your own
@@ -237,13 +237,16 @@
     <p>Orvesca stores a small amount of data locally on your own computer, in files that never leave your device except
       for the license check described below:</p>
     <h3>License file</h3>
-    <p>To keep your paid plan active, Orvesca saves a local license file containing your license key, license type,
-      subscription status, the customer name associated with the purchase, a device identifier generated for your
-      installation, and timestamps for activation and the most recent online check.</p>
+    <p>To manage your free trial and keep your paid plan active, Orvesca saves a local license file. For everyone, it
+      holds the date your trial started and the most recent time the app was used (so the trial is counted correctly).
+      For paid plans, it also holds your license key, license type, subscription status, the customer name associated
+      with the purchase, a device identifier generated for your installation, and timestamps for activation and the
+      most recent online check. The file is stored in a hidden <code>.orvesca</code> folder in your Windows user folder
+      (<code>%USERPROFILE%\.orvesca</code>) and carries a signature that lets Orvesca detect manual changes.</p>
     <h3>Workflow file</h3>
     <p>The workflow you build — the order of your windows, your chosen jump keys, whether jumping is on, your notes, and
-      whether each note is shown — is saved in a local file kept alongside the license file. This workflow data stays on
-      your device and is never sent to us.</p>
+      whether each note is shown — is saved in local files in the app's own data folder on your computer. This workflow data
+      stays on your device and is never sent to us.</p>
 
     <h2>Windows Orvesca can see</h2>
     <p>To let you build a workflow, Orvesca reads the list of open windows shown in your Windows taskbar (for example,
@@ -276,7 +279,9 @@
 
     <h2>Retention and control</h2>
     <p>Because the license and workflow files live on your computer, you remain in control of them. Uninstalling Orvesca
-      or deleting those files removes that local data from your device. For purchase-related information held by Lemon
+      removes your workflow data and settings. The license file is intentionally kept after uninstalling, so that
+      reinstalling Orvesca does not lose your activation or reset your trial; you can remove it at any time by deleting
+      the <code>%USERPROFILE%\.orvesca</code> folder. For purchase-related information held by Lemon
       Squeezy, you can exercise your rights through Lemon Squeezy's customer portal or by contacting us and we will help
       direct your request.</p>
 
@@ -293,8 +298,9 @@
         verification for the desktop application. Information related to purchases and licensing is processed according
         to Lemon Squeezy's own privacy policy.</li>
 
-      <li><strong>GitHub Pages</strong> hosts the Orvesca website, and <strong>GitHub Releases</strong> distributes
-        application downloads.</li>
+      <li><strong>GitHub Pages</strong> hosts the Orvesca website. The application is distributed through the
+        <strong>Microsoft Store</strong> and <strong>GitHub Releases</strong>, which are used only to deliver
+        downloads and updates.</li>
     </ul>
 
     <p>Each service is used only for its specific purpose as described above.</p>
