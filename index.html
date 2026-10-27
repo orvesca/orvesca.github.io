@@ -295,7 +295,7 @@
     </a>
     <nav class="navlinks">
       <a href="#idea">Why</a>
-      <a href="#features">Features</a>
+      <a href="#keys">Features</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
       <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
@@ -337,13 +337,27 @@
     <div class="wrap sec-head rv">
       <span class="eyebrow">The idea</span>
       <p class="lead">Stop <em>hunting through the taskbar.</em></p>
-      <p class="body">The cost of working across many windows isn't the work — it's finding the right window, again and again. Orvesca removes that. Give each window its own key — choose its first letter and there's nothing to memorize — then press F10 to turn jumping on, and land on any window instantly. Unlike Windows' own Win+number shortcuts, a key belongs to one specific window, so two Excel workbooks or two browser windows — each open in its own window — get separate keys. And if you pass through the same windows in the same order all day — entering data, comparing records, copying between apps — line them up once and walk the whole route with a single key.</p>
+      <p class="body">The cost of working across many windows isn't the work — it's finding the right window, again and again. Orvesca removes that. Give each window its own key — choose its first letter and there's nothing to memorize. Press F10 to turn jumping on and land on any window instantly; press it again whenever you need those letters to type. Unlike Windows' own Win+number shortcuts, a key belongs to one specific window, so two Excel workbooks or two browser windows — each open in its own window — get separate keys. And if you pass through the same windows in the same order all day — entering data, comparing records, copying between apps — line them up once and walk the whole route with a single key.</p>
       <figure class="taskbar-shot rv">
         <img src="/taskbar.png" alt="Four LibreOffice Calc files stacked behind a single Windows taskbar button" loading="lazy" />
         <figcaption>Four spreadsheets, one taskbar button. Orvesca gives each one its own key.</figcaption>
       </figure>
       <div class="video-frame rv">
         <iframe src="https://www.youtube-nocookie.com/embed/R0xQI51JWrA" title="Orvesca demo" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARRANGE: كل نافذة مفتوحة — أوّل خطوة في الاستعمال -->
+  <section class="shots" id="arrange">
+    <div class="wrap">
+      <div class="shot wide rv">
+        <div class="shot-txt">
+          <span class="eyebrow">Your open windows</span>
+          <h3>Every open window, ready to arrange.</h3>
+          <p>Orvesca lists every window you have open — even the spreadsheets Windows stacks behind a single taskbar button. Add the ones you need to your path, give each its own key, and you're set.</p>
+        </div>
+        <div class="frame"><img src="/windows.png" alt="Orvesca listing all open windows on the left, with a four-step workflow and jump keys on the right" loading="lazy" /></div>
       </div>
     </div>
   </section>
@@ -374,7 +388,29 @@
         </div>
       </div>
       <div class="keys-note rv">
-        <span>Two Excel files in separate windows? Each gets its own key — unlike Win+number, an Orvesca key belongs to one window, not to an app's spot on the taskbar. Tabs inside one window share its key; drag a tab out into its own window to give it a key of its own.</span>
+        <span>Two Excel files in separate windows? Each gets its own key — unlike Win+number, an Orvesca key belongs to one window, not to an app's spot on the taskbar.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTES & SAVED: الملاحظات (للمسار الدائري) ثم الحفظ -->
+  <section class="shots">
+    <div class="wrap">
+      <div class="shot wide rv">
+        <div class="shot-txt">
+          <span class="eyebrow">Notes that stay put</span>
+          <h3>A note that lives on the window it belongs to.</h3>
+          <p>Attach a reminder to any window and it travels with it — visible when you want the nudge, hidden when you don't. Small thing, big relief on a long shift.</p>
+        </div>
+        <div class="frame"><img src="/note.png" alt="A note pinned to the Expenses spreadsheet reading New row: date, item, amount" /></div>
+      </div>
+      <div class="shot wide rv">
+        <div class="shot-txt">
+          <span class="eyebrow">Save &amp; restore</span>
+          <h3>Build the path once. Bring it back tomorrow.</h3>
+          <p>Save an entire workflow to a slot and restore it with a single click — window order, custom jump keys, whether jump is on, your notes, and whether each note is showing. The free plan keeps one path; Pro keeps five.</p>
+        </div>
+        <div class="frame"><img src="/history.png" alt="Saved history with five path slots" /></div>
       </div>
     </div>
   </section>
@@ -383,29 +419,14 @@
   <section class="features" id="features">
     <div class="wrap">
       <div class="sec-head rv">
-        <span class="eyebrow">What it does</span>
-        <h2>Everything you need to move fast — nothing you don't.</h2>
+        <span class="eyebrow">And more</span>
+        <h2>Small things that add up on a long day.</h2>
       </div>
       <div class="fgrid">
         <div class="fcard rv">
-          <div class="ficon"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-8 8"/><path d="M9 5H5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-4"/></svg></div>
-          <h3>Jump keys you choose</h3>
-          <p>Give each window its own key — like N for notes or E for Excel — and jump straight to it. Two workbooks or two browser windows, each in its own window, get separate keys.</p>
-        </div>
-        <div class="fcard rv">
-          <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="9" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0"/><path d="M12 14v2"/></svg></div>
-          <h3>Jumping on demand</h3>
-          <p>Jump keys only work after you press F10, and one more press frees them again — your keyboard stays yours.</p>
-        </div>
-        <div class="fcard rv">
-          <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="6"/><circle cx="8" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="12" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="16" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/></svg></div>
-          <h3>Walk your route in order</h3>
-          <p>Arrange your windows into a path and move through them forward or back in a circle. Reorder any time, and duplicate a window when a step repeats.</p>
-        </div>
-        <div class="fcard rv">
           <div class="ficon"><svg viewBox="0 0 24 24"><path d="M15 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9l5-5V5a2 2 0 0 0-2-2z"/><path d="M15 21v-5h5"/><path d="M8 8h8M8 12h5"/></svg></div>
           <h3>Notes on any window</h3>
-          <p>Pin a reminder to a specific window — “Calculate the average” — and show or hide it whenever you like.</p>
+          <p>Pin a reminder to a specific window — like “New row: date, item, amount” — so a tired mind knows the next move. Show or hide it whenever you like.</p>
         </div>
         <div class="fcard rv">
           <div class="ficon"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v16l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg></div>
@@ -417,39 +438,25 @@
           <h3>Title-change alerts</h3>
           <p>When a window's title or tab changes, a small notice appears next to that window's card in your workflow to keep you posted — quietly, without getting in your way.</p>
         </div>
+        <div class="fcard rv">
+          <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="6"/><circle cx="8" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="12" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/><circle cx="16" cy="12" r="1.4" style="fill:#7db3ff;stroke:none"/></svg></div>
+          <h3>Repeat a step</h3>
+          <p>Pass the same window twice in one round? Add it twice. Your path follows your real routine, step by step.</p>
+        </div>
+        <div class="fcard rv">
+          <div class="ficon"><svg viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="9" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0"/><path d="M12 14v2"/></svg></div>
+          <h3>Private by design</h3>
+          <p>Your workflows, notes and window titles stay on your computer. No account, and nothing is sent anywhere except the weekly license check for paid plans.</p>
+        </div>
+        <div class="fcard rv">
+          <div class="ficon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg></div>
+          <h3>10 languages</h3>
+          <p>English, Arabic, French, German, Spanish, Dutch, Turkish, Chinese, Japanese and Korean — right-to-left included.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SCREENSHOTS -->
-  <section class="shots">
-    <div class="wrap">
-      <div class="shot wide rv">
-        <div class="shot-txt">
-          <span class="eyebrow">Your open windows</span>
-          <h3>Every open window, ready to arrange.</h3>
-          <p>Orvesca lists every window you have open — even the spreadsheets Windows stacks behind a single taskbar button. Add the ones you need to your path, give each its own key, and you're set.</p>
-        </div>
-        <div class="frame"><img src="/windows.png" alt="Orvesca listing all open windows on the left, with a four-step workflow and jump keys on the right" loading="lazy" /></div>
-      </div>
-      <div class="shot wide rv">
-        <div class="shot-txt">
-          <span class="eyebrow">Save &amp; restore</span>
-          <h3>Build the path once. Bring it back tomorrow.</h3>
-          <p>Save an entire workflow to a slot and restore it with a single click — window order, custom jump keys, whether jump is on, your notes, and whether each note is showing. The free plan keeps one path; Pro keeps five.</p>
-        </div>
-        <div class="frame"><img src="/history.png" alt="Saved history with five path slots" /></div>
-      </div>
-      <div class="shot wide rv">
-        <div class="shot-txt">
-          <span class="eyebrow">Notes that stay put</span>
-          <h3>A note that lives on the window it belongs to.</h3>
-          <p>Attach a reminder to any window and it travels with it — visible when you want the nudge, hidden when you don't. Small thing, big relief on a long shift.</p>
-        </div>
-        <div class="frame"><img src="/note.png" alt="A note pinned to the Expenses spreadsheet reading New row: date, item, amount" /></div>
-      </div>
-    </div>
-  </section>
 
   <!-- PRICING -->
   <section class="pricing" id="pricing">
@@ -523,9 +530,11 @@
       </div>
       <div class="faq-list rv">
         <div class="qa"><button>Who is Orvesca for?<span class="ic"></span></button>
-          <div class="ans"><p>Anyone who passes the same windows many times a day — any work that means switching repeatedly between several windows, like data entry, comparing records, and copying between apps. If your route through those windows is fixed, Orvesca turns it into keystrokes.</p></div></div>
+          <div class="ans"><p>Anyone who works across many windows and is tired of hunting for them in the taskbar — office work, accounting, support, research, development. And if you pass through the same windows in the same order all day — data entry, comparing records, copying between apps — Orvesca turns that whole route into a single key.</p></div></div>
         <div class="qa"><button>Do I have to use the jump keys?<span class="ic"></span></button>
-          <div class="ans"><p>No. Jumping is optional and set per window — turn it on only where it helps, or off entirely. And F10 releases every shortcut instantly, so your keys are free the moment you need them for something else.</p></div></div>
+          <div class="ans"><p>No. Jump keys stay off until you press F10, and you can turn jumping on or off for each window. Press F10 again whenever you need those keys to type.</p></div></div>
+        <div class="qa"><button>What about tabs?<span class="ic"></span></button>
+          <div class="ans"><p>Orvesca works with windows, not tabs. Tabs inside one window share its key — drag a tab out into its own window to give it a key of its own.</p></div></div>
         <div class="qa"><button>What happens when a window's title changes?<span class="ic"></span></button>
           <div class="ans"><p>A small notice appears next to that window's card in your workflow to keep you informed. Nothing breaks and there's nothing you need to do — it never interrupts your work.</p></div></div>
         <div class="qa"><button>What does a saved path remember?<span class="ic"></span></button>
@@ -563,7 +572,7 @@
         <span><b>Orvesca</b><span style="font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted-2)">Smart Workflow Assistant</span></span>
       </a>
       <nav class="fl">
-        <a href="#idea">Why</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refund.html">Refund</a><a href="#download">Contact</a>
+        <a href="#idea">Why</a><a href="#keys">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refund.html">Refund</a><a href="#download">Contact</a>
       </nav>
     </div>
     <p class="copy">© 2026 Orvesca · Windows 10 &amp; 11 (64-bit) · Available in 10 languages</p>
