@@ -29,21 +29,20 @@
   function trackDownload(event, url) {
     if (typeof gtag === 'function') {
       event.preventDefault(); // إيقاف الانتقال الفوري للرابط
+      var opened = false;
+      function openOnce() { if (!opened) { opened = true; window.open(url, '_blank'); } }
       gtag('event', 'app_download', {
         'event_category': 'Downloads',
-        'event_label': 'Orvesca Desktop App',
+        'event_label': 'Microsoft Store',
         'value': 1,
-        'event_callback': function() {
-           window.open(url, '_blank'); // فتح الرابط في تبويب جديد بعد إرسال الحدث
-        }
+        'event_callback': openOnce // فتح صفحة المتجر في تبويب جديد بعد إرسال الحدث
       });
-      
-      // كإجراء احتياطي في حال تأخر جوجل، يتم التوجيه بعد نصف ثانية
-      setTimeout(function() {
-         window.open(url, '_blank');
-      }, 500);
+
+      // كإجراء احتياطي في حال تأخر جوجل: نفس الفتح بعد نصف ثانية (مرّة واحدة فقط)
+      setTimeout(openOnce, 500);
     } else {
        // إذا لم يعمل السكربت لسبب ما (مثل أدوات حظر الإعلانات)، يتم فتح الرابط مباشرة
+       event.preventDefault(); // وإلا فُتح الرابط مرّتين: هنا وفي التبويب نفسه
        window.open(url, '_blank');
     }
   }
@@ -298,7 +297,7 @@
       <a href="#keys">Features</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
+      <a class="btn btn-primary" href="https://apps.microsoft.com/detail/9PB4JHDHN9MX" onclick="trackDownload(event, this.href)">Download</a>
     </nav>
   </div>
 </header>
@@ -313,7 +312,7 @@
         <h1>A key for<br>every <span class="em">window.</span></h1>
         <p class="sub">Give each window its own key — like N for your notes or E for Excel — and press it to jump straight there. Or walk through your windows in order with F8 and F9. Hands on the keyboard, eyes on the work.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
+          <a class="btn btn-primary" href="https://apps.microsoft.com/detail/9PB4JHDHN9MX" onclick="trackDownload(event, this.href)">Get it from Microsoft Store</a>
           <a class="btn btn-ghost" href="#idea">See how it works</a>
         </div>
         <div class="trust">
@@ -474,7 +473,7 @@
             <p>Install Orvesca and every feature is on from day one — unlimited windows, five saved paths, all jump keys and notes. No card, no sign-up, nothing to cancel. On day 15 Orvesca simply becomes the Free plan below and keeps working. Upgrade whenever you're ready — or never.</p>
           </div>
         </div>
-        <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip">Download &amp; start</a>
+        <a class="btn btn-primary" href="https://apps.microsoft.com/detail/9PB4JHDHN9MX" onclick="trackDownload(event, this.href)">Download &amp; start</a>
       </div>
       <div class="pgrid">
         <div class="plan rv">
@@ -486,7 +485,7 @@
             <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Jump with custom keys</li>
             <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>One saved path (save &amp; restore)</li>
           </ul>
-          <a class="btn btn-ghost" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download</a>
+          <a class="btn btn-ghost" href="https://apps.microsoft.com/detail/9PB4JHDHN9MX" onclick="trackDownload(event, this.href)">Download</a>
         </div>
         <div class="plan rv">
           <h3>Annual Pass</h3>
@@ -553,9 +552,9 @@
       <div class="card rv">
         <span class="eyebrow" style="justify-content:center">Get Orvesca</span>
         <h2 style="margin-top:16px">Ready when your workflow is.</h2>
-        <p>Orvesca is available now. The free plan is there from day one — no trial timer, no card required. Download the ZIP, extract it, then run the installer inside. Windows may show a SmartScreen notice because the app is new — click "More info" then "Run anyway" to continue.</p>
+        <p>Orvesca is available now on the Microsoft Store. The free plan is there from day one — no trial timer, no card required. Install it in one click, and updates arrive automatically through the Store.</p>
         <div class="row">
-          <a class="btn btn-primary" href="https://github.com/orvesca/orvesca-app/releases/latest/download/Orvesca_1.0.0_Windows.zip" onclick="trackDownload(event, this.href)">Download for Windows</a>
+          <a class="btn btn-primary" href="https://apps.microsoft.com/detail/9PB4JHDHN9MX" onclick="trackDownload(event, this.href)">Get it from Microsoft Store</a>
           <a class="btn btn-ghost" href="mailto:orvescaapp@gmail.com">Get in touch</a>
         </div>
         <p class="contact">Questions or feedback? <a href="mailto:orvescaapp@gmail.com">orvescaapp@gmail.com</a></p>
